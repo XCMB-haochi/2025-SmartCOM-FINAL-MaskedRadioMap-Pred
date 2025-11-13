@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir \"E:\\Ungraduate_Studies_UJS\\Year2_I\\智能通信技术基础\\homeworks\\03_Final_RadioMap_Completion\\Data\\test(student)\")",
+      "Bash(git add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

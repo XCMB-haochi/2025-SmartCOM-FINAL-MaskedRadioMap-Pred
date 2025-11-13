@@ -1,0 +1,42 @@
+# Radio Map Completion Project Requirements
+# PyTorch and CUDA-related packages are excluded as they are usually pre-installed
+# Install with: pip install -r requirements.txt
+
+# Core dependencies
+numpy>=1.19.0
+pandas>=1.2.0
+Pillow>=8.0.0
+matplotlib>=3.3.0
+tqdm>=4.60.0
+
+# Image processing
+scikit-image>=0.18.0
+opencv-python>=4.5.0
+
+# Scientific computing
+scipy>=1.6.0
+
+# Jupyter notebook support
+jupyter>=1.0.0
+ipywidgets>=7.6.0
+notebook>=6.3.0
+
+# Plotting enhancements
+seaborn>=0.11.0
+
+# Utilities
+tensorboard>=2.5.0
+tensorboardX>=2.2
+
+# Data handling
+h5py>=3.1.0
+
+# Performance monitoring
+psutil>=5.8.0
+GPUtil>=1.4.0
+
+# Configuration management
+pyyaml>=5.4.0
+
+# Optional: for better progress bars in Jupyter
+ipykernel>=5.5.0
