@@ -16,6 +16,9 @@ opencv-python>=4.5.0
 # Scientific computing
 scipy>=1.6.0
 
+# Tensor operations
+einops>=0.4.0
+
 # Jupyter notebook support
 jupyter>=1.0.0
 ipywidgets>=7.6.0

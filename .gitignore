@@ -1,15 +1,13 @@
-# Reference materials (contains embedded repos and long filenames)
-Refs/
-
-# Python
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
+
+# C extensions
 *.so
+
+# Distribution / packaging
 .Python
-env/
-venv/
-ENV/
 build/
 develop-eggs/
 dist/
@@ -22,61 +20,93 @@ parts/
 sdist/
 var/
 wheels/
+share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
 
 # Jupyter Notebook
 .ipynb_checkpoints
-*.ipynb_checkpoints/
 
-# PyTorch
-*.pth
-*.pt
-models/
-checkpoint*/
+# IPython
+profile_default/
+ipython_config.py
 
-# Data files (exclude PNG images)
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.bmp
-*.tiff
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
 
-# Output directories
-output/
-results/
-predictions/
-
-# IDE
+# IDEs
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
 
-# OS
+# Model and output directories
+models*/
+output*/
+checkpoints/
+*.pth
+*.pt
+*.ckpt
+
+# Data directories (keep only essential data)
+Data/OriginDataSet/
+
+# Working directories
+my_paper/
+refs/
+Refs/
+logs/
+
+# Temporary files
+*.tmp
+*.temp
 .DS_Store
 Thumbs.db
 
-# Logs
-*.log
-logs/
+# Large files
+*.h5
+*.hdf5
+*.pkl
+*.pickle
 
-# Large data files
-Data/train/
-Data/test*/
-
-# Temporary files
-temp/
-tmp/
-cache/
-
-# Config files with sensitive info
-config.yaml
-config.json
-secrets.txt
-
-# Documentation build
-docs/_build/
+# Visualization outputs (except README images)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+!README_images/*.png
+!README_images/*.jpg
+!README_images/*.pdf
