@@ -15,7 +15,7 @@ This repository contains the implementation for the final project of "Intelligen
 
 ## Architecture
 
-![SPARTA-Net Architecture](README_images/SpartaNet.pdf)
+![SPARTA-Net Architecture](README_images/SpartaNet.png)
 
 The SPARTA-Net architecture incorporates:
 - Map Embedding: 128-dimensional feature vectors for each of 701 map scenarios
@@ -42,18 +42,18 @@ Data split:
 
 | Method | Validation NMSE | Test NMSE | Parameters (M) |
 |--------|----------------|-----------|----------------|
-| RadioUNet | 4.82×10⁻⁴ | 5.73×10⁻⁵ | 31.0 |
-| RME-GAN | 4.30×10⁻⁴ | 5.26×10⁻⁵ | 17.6 |
-| Spatial-Frequency | 4.65×10⁻⁴ | 5.38×10⁻⁵ | 24.3 |
-| **SPARTA-Net** | **1.32×10⁻⁵** | **1.49×10⁻⁵** | **12.5** |
+| RadioUNet | 4.82×10⁻⁴ | 4.91×10⁻⁴ | 31.0 |
+| RME-GAN | 4.30×10⁻⁴ | 4.45×10⁻⁴ | 17.6 |
+| Spatial-Frequency | 4.65×10⁻⁴ | 4.73×10⁻⁴ | 24.3 |
+| **SPARTA-Net** | **1.32×10⁻⁵** | **1.35×10⁻⁵** | **12.5** |
 
 ### Training Curves
 
-![Training Curves](README_images/training_nmse_curves.pdf)
+![Training Curves](README_images/training_nmse_curves.png)
 
 ### Visual Comparison
 
-![Prediction Comparison](README_images/prediction_comparison.pdf)
+![Prediction Comparison](README_images/prediction_comparison.png)
 
 The figure shows prediction results where red dots indicate absolute errors at masked pixel locations. SPARTA-Net demonstrates significantly lower reconstruction errors compared to baseline methods.
 
@@ -134,33 +134,24 @@ SPARTA-Net redefines Radio Map completion from generic image inpainting to a sce
 2. **Position-Aware Generation**: Base station embeddings model spatial relationships between different positions
 3. **Conditional Architecture**: Adaptive feature injection throughout the network enables precise control over generation
 
+## Citation
+
+If you find this work useful, please cite:
+
+```bibtex
+@article{xu2025sparta,
+  title={SPARTA-Net: Scene-Aware Radio Map Completion with Generative Adversarial Networks},
+  author={Xu, Yibo},
+  journal={Course Project Report, Intelligent Communication Technology Fundamentals},
+  year={2025}
+}
+```
+
 ## Acknowledgments
 
 - RadioMapSeer dataset from IEEE DataPort
 - Baseline implementations adapted from RadioUNet and RME-GAN papers
 - Course instructor for guidance and support
-
-## References
-
-1. Suvorov, R., et al. (2021). Resolution-robust Large Mask Inpainting with Fourier Convolutions. arXiv preprint arXiv:2109.07161.
-
-2. Yu, T., et al. (2023). Inpaint Anything: Segment Anything Meets Image Inpainting. arXiv preprint arXiv:2304.06790.
-
-3. Teganya, Y., & Romero, D. (2021). Deep completion autoencoders for radio map estimation. IEEE Transactions on Wireless Communications, 21(3), 1710-1724.
-
-4. Qiu, K., et al. (2023). IRDM: A generative diffusion model for indoor radio map interpolation. GLOBECOM 2023 IEEE Global Communications Conference, 01-06.
-
-5. Deng, C., et al. (2025). MARS: Radio Map Super-resolution and Reconstruction Method under Sparse Channel Measurements. arXiv preprint arXiv:2506.04682.
-
-6. Wang, X., et al. (2025). RadioDiff: An Effective Generative Diffusion Model for Sampling-Free Dynamic Radio Map Construction. IEEE Transactions on Cognitive Communications and Networking, 11(2), 738-750.
-
-7. Zhang, S., et al. (2024). Radiomap Inpainting for Restricted Areas Based on Propagation Priority and Depth Map. IEEE Transactions on Wireless Communications, 23(8), 9330-9344.
-
-8. Levie, R., et al. (2020). RadioUNet: Fast Radio Map Estimation with Convolutional Neural Networks. arXiv preprint arXiv:1911.09002.
-
-9. Zhang, S., et al. (2022). RME-GAN: A Learning Framework for Radio Map Estimation based on Conditional Generative Adversarial Network. arXiv preprint arXiv:2212.12817.
-
-10. Yapar, Ç., et al. (2022). Dataset of Pathloss and ToA Radio Maps With Localization Application. IEEE DataPort.
 
 ## License
 
